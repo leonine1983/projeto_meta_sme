@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 0;
+        }
+
+        /*Propriedades do header*/
+
+        header {
+            background: #666;
+            width: 100%;
+            height: auto;
+            position: fixed;
+        }
+
+        .header-conteiner {
+            display: flex;
+        }
+
+        .header-left {
+            width: calc(100% - 45%);
+            height: auto;
+            background-color: #e750fb;
+            background-image: linear-gradient(180deg, #e750fb 0%, #8dbcda 38%, #e0eceb 100%);
+        }
+
+        .header-center {
+            width: calc(100% - 90%);
+            height: auto;
+            background-color: #e750fb;
+            background-image: linear-gradient(180deg, #e750fb 0%, #8dbcda 38%, #e0eceb 100%);
+            text-align: center;
+        }
+
+        .header-right {
+            width: calc(100% - 45%);
+            height: auto;
+            background-color: #e750fb;
+            background-image: linear-gradient(180deg, #e750fb 0%, #8dbcda 38%, #e0eceb 100%);
+        }
+
+        .header-both {
+            width: 100%;
+            height: auto;
+            background: #E0ECEB;
+            box-shadow: 0.2rem 0.1rem 0.2rem #666;
+            text-align: center;
+            padding: 0.5%;
+        }
+
+        svg {
+            width: 100%;
+        }
+
+        .pesquisa {
+            width: 75%;
+            border-radius: 0.5rem;
+            border: 0.1rem rgb(247, 245, 245) solid;
+            background-color: white;
+            box-shadow: 0.2rem 0.1rem 0.2rem #666;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .pesquisa button,
+        .pesquisa input {
+            height: 1.5rem;
+        }
+
+        .pesquisa button {
+            width: 8%;
+        }
+
+        .pesquisa input {
+            background: none;
+            width: 87%;
+            transition-duration: 1000ms;
+            margin-bottom: 0.2rem;
+            border: #e750fb 1rem;
+
+        }
+
+        .pesquisa input:focus {
+            background-color: #666;
+            border: 5px solid red;
+        }
+
+
+
+
+        /*Propriedades main */
+        main {
+            margin: 0 auto;
+            padding: 10%;
+            width: 70%;
+            height: 50rem;
+            background: rgb(240, 240, 243);
+            box-shadow: 0rem 0.1rem 0.2rem #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-conteiner">
+            <div class="header-left"></div>
+            <div class="header-center">
+                <span>
+                    {% include 'funcionarios/partials/meta_smv.html' %}
+                </span>
+            </div>
+            <div class="header-right"></div>
+        </div>
+        <div class="header-both">
+            <span class="pesquisa">
+                <form>
+                    <input />
+                    <button></button>
+                </form>
+            </span>
+        </div>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nisi repellat nobis earum praesentium, rem
+            obcaecati ducimus eveniet magnam iure, reiciendis eligendi illum maxime suscipit sed? Facilis explicabo
+            atque id.
+            Ex, quo? Numquam quasi unde id placeat incidunt rem ex odit molestiae ipsum, omnis nemo ratione vitae cumque
+            ipsa debitis, dolore quibusdam, nam commodi dolores laboriosam quisquam vel est voluptatum!
+            Porro quas at itaque debitis ab animi voluptatibus nam! Placeat ex at reprehenderit iusto delectus sunt quae
+            recusandae corporis, possimus eaque, veritatis sed explicabo nisi. Magnam placeat repudiandae atque
+            eligendi?
+            Dicta odio saepe quia deserunt corrupti culpa aliquam incidunt expedita possimus veritatis, totam blanditiis
+            esse iste placeat alias delectus quos autem, sit excepturi laboriosam et nobis beatae magni a. Laudantium?
+            Voluptates sed inventore, assumenda iusto asperiores blanditiis libero illum ut! Nobis dolorem laborum sequi
+            animi cum voluptatibus sapiente, sit praesentium accusantium eum nam culpa repellat minus facere atque
+            tempora ex?
+            Quasi tempore ducimus eum quis, earum aperiam quibusdam qui pariatur ipsum nemo explicabo officiis laborum
+            dolor voluptates esse dolores modi repellendus voluptas. Soluta reprehenderit a dolor ipsa. Molestiae,
+            corrupti sequi?
+            Ad velit accusamus accusantium numquam ab officia rem explicabo, tempore sapiente iusto optio! Quidem
+            doloremque, earum repellat iste, nihil totam voluptatum ad neque molestias similique sint dolores, ullam
+            quod! Nesciunt.
+            A voluptates cum repellendus dolore et distinctio expedita corporis pariatur voluptas dolores sed temporibus
+            ad laboriosam praesentium odit quod, optio sunt sit. Voluptatum saepe, eaque corrupti minima quasi eveniet
+            vitae!
+            Tenetur molestias odio dignissimos ipsum, sunt repudiandae dolores deserunt vitae facere consequuntur
+            quibusdam voluptatem praesentium ex explicabo maxime eum, magnam id qui laborum officia rerum eveniet omnis.
+            Obcaecati, sequi fuga?
+            Dolor quam libero aliquid, dolorum tempora deserunt aspernatur. Dicta labore ab provident laboriosam
+            voluptate tempora, laborum eius a blanditiis dolore perferendis nesciunt placeat sunt voluptatem atque quos
+            inventore totam. Sint.
+        </p>
+    </main>
+</body>
+
+</html>
